@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import InputDisplay from "./components/dynamic_text";
+import LoginForm from "./components/login";
+import QuizApp from "./components/quiz";
+import Tablist from "./components/tabs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Products from "./products";
+import DisplayPro from "./components/dispProduct";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LoginForm />
     </div>
   );
 }
